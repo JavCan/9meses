@@ -4,45 +4,47 @@
   align-items: flex-start; /* Alinea el contenido a la izquierda */
   justify-content: end; /* Empuja el título/subtítulo hacia arriba y el indicador de scroll hacia abajo */
   text-align: left; /* Alinea el texto a la izquierda */
-  min-height: 97vh;
+  min-height: 93vh;
   width: 100%;
   box-sizing: border-box;
-  padding: 2vh 8vw; /* Ajusta el padding (arriba, horizontal, abajo) */
-  background-image: url('../assets/images/A9C26DCE-4131-4EB9-849D-329FF061BF54.JPG'); /* Ruta a tu imagen */
+  padding: 2vh 6vw; /* Ajusta el padding (arriba, horizontal, abajo) */
+  background-image: url('../assets/images/A9C26DCE-4131-4EB9-849D-329FF061BF54.JPG');
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: left; /* Centra la imagen */
+  background-position-x: left; /* Centra la imagen */
+  background-position-y: 69%; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
+  margin-bottom: 0;
 }
 
 .landing-title {
-  font-size: 5em;
-  font-weight: 100;
+  font-size: 3.5em;
+  font-weight: 500;
   color: #ffffff;
   margin: 0 0 1px 0;
   width: 100%; /* Asegura que ocupe el ancho para la alineación de texto */
 }
 
 .landing-subtitle {
-  font-size: 2.5em;
+  font-size: 2em;
   color: #eeeeee;
-  max-width: 85%; /* Puedes ajustar esto para controlar el ancho del subtítulo */
+  max-width: 75%; /* Puedes ajustar esto para controlar el ancho del subtítulo */
   line-height: 1.7;
   margin-bottom: .5em;
 }
 
 /* ADD STYLES FOR THE NEW BUTTON */
 .scroll-to-gallery-button {
-  padding: 1em 9em;
-  font-size: 2em; /* Ajusta según el diseño deseado */
+  padding: .5rem 2rem;
+  font-size: 1.5rem; /* Ajusta según el diseño deseado */
   font-weight: 500;
   color: #fff;
-  background-color: #646cffa7; /* Color base del botón */
+  background-color: #646cff60; /* Color base del botón */
   border: none;
   border-radius: 50px; /* Forma de píldora */
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 30px; /* Espacio sobre el botón */
-  align-self: center; /* Centra el botón horizontalmente */
+  margin: 30px 0; /* Espacio sobre el botón */
+  align-self: left; /* Centra el botón horizontalmente */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 

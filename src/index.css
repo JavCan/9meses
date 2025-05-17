@@ -56,15 +56,15 @@ body {
   background-color: rgba(255, 255, 255, 0.125); /* Ajusta la opacidad para el efecto deseado */
   backdrop-filter: blur(10px); /* El efecto de desenfoque clave */
   -webkit-backdrop-filter: blur(10px); /* Para Safari */
-  border-radius: 15px; /* Bordes redondeados suaves */
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1); /* Sombra sutil */
+  border-radius: 24px; /* Bordes redondeados suaves */
+  border: 1px solid rgba(255, 255, 255, 0.383);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.664); /* Sombra sutil */
 }
 
 /* Contenedor principal de la aplicación */
 .app-container {
   width: 100%;
-  max-width: 1200px; /* O el ancho que prefieras */
+  max-width: 100vw; /* O el ancho que prefieras */
   margin: 0 auto;
   padding: 20px;
 }

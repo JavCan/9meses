@@ -7,7 +7,7 @@ import './Gallery.css'; // Crearemos este archivo para los estilos de la galerí
 const Gallery = () => {
   return (
     <div className="gallery-container" id="gallery-section"> {/* Added id here */}
-      <h2 className="gallery-title">Nuestros Mesesotes :]</h2>
+      <h2 className="gallery-title">🐭 Nuestros Mesesotes 🐄</h2>
       <div className="gallery-grid">
         {cardsData.map((card) => {
           const unlockDate = getUnlockDate(relationshipStartDate, card.monthToUnlock);
