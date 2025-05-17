@@ -18,7 +18,7 @@
   font-size: 5em;
   font-weight: 100;
   color: #ffffff;
-  margin-bottom: .2em;
+  margin: 0 0 1px 0;
   width: 100%; /* Asegura que ocupe el ancho para la alineación de texto */
 }
 
@@ -27,7 +27,7 @@
   color: #eeeeee;
   max-width: 85%; /* Puedes ajustar esto para controlar el ancho del subtítulo */
   line-height: 1.7;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 /* ADD STYLES FOR THE NEW BUTTON */
@@ -36,7 +36,7 @@
   font-size: 2em; /* Ajusta según el diseño deseado */
   font-weight: 500;
   color: #fff;
-  background-color: #646cff; /* Color primario, puedes ajustarlo */
+  background-color: #646cffa7; /* Color base del botón */
   border: none;
   border-radius: 50px; /* Forma de píldora */
   cursor: pointer;
