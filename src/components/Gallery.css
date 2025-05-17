@@ -1,0 +1,37 @@
+/* src/components/Gallery.css */
+.gallery-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-title {
+  font-size: 3em;
+  color: #555; /* Un color gris oscuro para el título */
+  margin: 2.5em 0;
+  text-align: center;
+  font-weight: 300; /* Un peso de fuente más ligero, estilo Apple */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Diseño responsive */
+  gap: 30px; /* Espacio entre tarjetas */
+  width: 100%;
+  height: 100%;
+  padding: 0 15px; /* Pequeño padding lateral */
+  box-sizing: border-box;
+}
+
+/* Media query para pantallas más pequeñas, por ejemplo, 1 columna */
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 20px;
+  }
+  .gallery-title {
+    font-size: 2em;
+  }
+}

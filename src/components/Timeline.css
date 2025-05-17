@@ -1,0 +1,119 @@
+/* src/components/Timeline.css */
+.timeline-container {
+  width: 100%;
+  padding: 40px 20px;
+  margin-top: 40px; /* Espacio después de la galería */
+  text-align: center;
+  box-sizing: border-box;
+  /* glass-effect se aplica desde el componente JSX */
+}
+
+.timeline-title {
+  font-size: 2.2em;
+  font-weight: 300;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.anniversary-message {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre items del contador */
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2); /* Fondo ligeramente más claro para los items */
+  padding: 15px 20px;
+  border-radius: 10px;
+  min-width: 80px; /* Ancho mínimo para cada item */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.countdown-value {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo de la barra de progreso */
+  border-radius: 25px;
+  padding: 4px; /* Pequeño padding para que la barra interna se vea bien */
+  margin-bottom: 10px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.progress-bar {
+  height: 25px;
+  background: linear-gradient(90deg, #ff8aae, #ffc0cb); /* Gradiente rosa */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: width 0.5s ease-in-out; /* Animación suave del progreso */
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.progress-label {
+  font-size: 0.9em;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .timeline-title {
+    font-size: 1.8em;
+  }
+  .countdown {
+    gap: 15px;
+  }
+  .countdown-item {
+    padding: 10px 15px;
+    min-width: 70px;
+  }
+  .countdown-value {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown {
+    gap: 10px;
+    justify-content: space-around; /* Mejor distribución en móviles */
+  }
+  .countdown-item {
+    padding: 10px;
+    min-width: 60px; /* Más pequeño para móviles */
+  }
+  .countdown-value {
+    font-size: 1.6em;
+  }
+  .countdown-label {
+    font-size: 0.7em;
+  }
+  .progress-bar {
+    height: 20px;
+    font-size: 0.8em;
+  }
+}

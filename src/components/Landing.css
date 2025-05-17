@@ -1,0 +1,86 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+  justify-content: end; /* Empuja el título/subtítulo hacia arriba y el indicador de scroll hacia abajo */
+  text-align: left; /* Alinea el texto a la izquierda */
+  min-height: 97vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2vh 8vw; /* Ajusta el padding (arriba, horizontal, abajo) */
+  background-image: url('../assets/images/A9C26DCE-4131-4EB9-849D-329FF061BF54.JPG'); /* Ruta a tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: left; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.landing-title {
+  font-size: 5em;
+  font-weight: 100;
+  color: #ffffff;
+  margin-bottom: .2em;
+  width: 100%; /* Asegura que ocupe el ancho para la alineación de texto */
+}
+
+.landing-subtitle {
+  font-size: 2.5em;
+  color: #eeeeee;
+  max-width: 85%; /* Puedes ajustar esto para controlar el ancho del subtítulo */
+  line-height: 1.7;
+  margin-bottom: 1em;
+}
+
+/* ADD STYLES FOR THE NEW BUTTON */
+.scroll-to-gallery-button {
+  padding: 1em 9em;
+  font-size: 2em; /* Ajusta según el diseño deseado */
+  font-weight: 500;
+  color: #fff;
+  background-color: #646cff; /* Color primario, puedes ajustarlo */
+  border: none;
+  border-radius: 50px; /* Forma de píldora */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 30px; /* Espacio sobre el botón */
+  align-self: center; /* Centra el botón horizontalmente */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-to-gallery-button:hover {
+  background-color: #535bf2; /* Tono más oscuro al pasar el mouse */
+  transform: translateY(-2px); /* Ligera elevación al pasar el mouse */
+}
+
+.scroll-to-gallery-button:active {
+  transform: translateY(0px); /* Efecto de presión */
+  background-color: #454ce1; /* Tono aún más oscuro al hacer clic */
+}
+
+
+@media (max-width: 768px) {
+  .landing-container {
+    padding: 60px 25px 30px 25px; /* Ajusta el padding para tablets */
+    justify-content: space-between; /* Mantenemos space-between */
+  }
+  .landing-title {
+    font-size: 2.2em; /* Ajustado para tablets y móviles grandes */
+  }
+  .landing-subtitle {
+    font-size: 1.1em; /* Ajustado para tablets y móviles grandes */
+    max-width: 100%;
+  }
+  /* REMOVE .scroll-indicator styles from media query */
+  /*
+  .scroll-indicator span {
+    font-size: 5em;
+  }
+  .scroll-indicator p {
+    font-size: 1.5em;
+  }
+  */
+  .scroll-to-gallery-button {
+    font-size: 1em;
+    padding: 0.7em 1.5em;
+  }
+}
+

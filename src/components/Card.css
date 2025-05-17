@@ -1,0 +1,81 @@
+/* src/components/Card.css */
+.card-container {
+  width: 100%; /* Ancho de la tarjeta, ajusta según necesites */
+  height: 90%; /* Alto de la tarjeta */
+  cursor: pointer;
+  border-radius: 15px; /* Coincide con glass-effect */
+  position: relative; /* Para el overlay de bloqueo */
+}
+
+.card-container.locked {
+  cursor: not-allowed;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d; /* Mantiene el efecto 3D durante la rotación */
+  /* glass-effect ya se aplica desde Card.jsx */
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta la cara trasera cuando no está visible */
+  -webkit-backface-visibility: hidden; /* Para Safari */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; /* Coincide con glass-effect */
+  overflow: hidden; /* Para que la imagen no se salga de los bordes redondeados */
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra la tarjeta sin deformarse */
+}
+
+.card-back {
+  background-color: rgba(230, 230, 250, 0.8); /* Un color lavanda suave, puedes cambiarlo */
+  color: #333;
+  transform: rotateY(180deg); /* Posición inicial de la cara trasera */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.phrase-content {
+  text-align: center;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+/* Overlay para tarjetas bloqueadas */
+.locked-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 15px; /* Coincide con glass-effect */
+  z-index: 10; /* Asegura que esté por encima de la imagen */
+}
+
+.lock-icon {
+  font-size: 3em; /* Tamaño del candado */
+  margin-bottom: 10px;
+}
+
+.locked-overlay p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
