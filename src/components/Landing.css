@@ -8,7 +8,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 2vh 6vw; /* Ajusta el padding (arriba, horizontal, abajo) */
-  background-image: url('../assets/images/A9C26DCE-4131-4EB9-849D-329FF061BF54.JPG');
+  /* background-image: url('foto.JPG'); */ /* Elimina o comenta esta línea */
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-position-x: left; /* Centra la imagen */
   background-position-y: 69%; /* Centra la imagen */

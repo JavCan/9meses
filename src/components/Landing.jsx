@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Landing.css';
+// Corrige la ruta a la imagen. Asegúrate que 'foto.jpg' esté en 'src/assets/images/'
+import landingBgImage from '../assets/images/foto.jpg'; 
 
 const Landing = () => {
   const containerVariants = {
@@ -36,6 +38,7 @@ const Landing = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      style={{ backgroundImage: `url(${landingBgImage})` }} // Añade el estilo aquí
     >
       <motion.h1 className="landing-title" variants={itemVariants}>
         ¡HOLA MI DANNA HERMOSA!
