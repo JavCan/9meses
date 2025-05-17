@@ -55,7 +55,7 @@ const Timeline = () => {
           {Math.round(progress)}%
         </div>
       </div>
-      <p className="progress-label">Progreso hacia el {new Date(anniversaryDate).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+      <p className="progress-label">Cada vez falta menos :)</p>
     </section>
   );
 };

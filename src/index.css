@@ -53,7 +53,7 @@ body {
 
 /* Estilo base para elementos con efecto "glass" */
 .glass-effect {
-  background-color: rgba(255, 255, 255, 0.3); /* Ajusta la opacidad para el efecto deseado */
+  background-color: rgba(255, 255, 255, 0.125); /* Ajusta la opacidad para el efecto deseado */
   backdrop-filter: blur(10px); /* El efecto de desenfoque clave */
   -webkit-backdrop-filter: blur(10px); /* Para Safari */
   border-radius: 15px; /* Bordes redondeados suaves */

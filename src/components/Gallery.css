@@ -8,9 +8,8 @@
 }
 
 .gallery-title {
-  font-size: 3em;
-  color: #555; /* Un color gris oscuro para el título */
-  margin: 2.5em 0;
+  font-size: 5em;
+  color: #ffffff; /* Un color gris oscuro para el título */
   text-align: center;
   font-weight: 300; /* Un peso de fuente más ligero, estilo Apple */
 }
