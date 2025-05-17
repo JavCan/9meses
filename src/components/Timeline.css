@@ -64,7 +64,7 @@
 
 .progress-bar {
   height: 25px;
-  background: linear-gradient(90deg, #ff8aae, #ffc0cb); /* Gradiente rosa */
+  background: linear-gradient(90deg, #47d3d872, #34db5888); /* Gradiente rosa */
   border-radius: 20px;
   display: flex;
   align-items: center;
