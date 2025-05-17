@@ -19,63 +19,63 @@ export const cardsData = [
     monthToUnlock: 1, // Septiembre (asumiendo que la relación empezó en septiembre)
     title: 'Recuerdo 1',
     image: imagenSeptiembre, // Usa la variable importada
-    phrase: 'El comienzo de nuestra aventura juntos. ¡Qué emoción!',
+    phrase: 'Acababa de empezar todo y ya nos queríamos insanamente',
   },
   {
     id: 2,
     monthToUnlock: 2, // Octubre
     title: 'Recuerdo 2',
     image: imagenOctubre, // Usa la variable importada
-    phrase: 'Nuestro primer [evento especial] juntos. Inolvidable.',
+    phrase: 'El pasar una noche contigo, aunque no fue jijiji, fue demasiado especial 🐄',
   },
   {
     id: 3,
     monthToUnlock: 3, // Noviembre
     title: 'Recuerdo 3',
     image: imagenNoviembre, // Usa la variable importada
-    phrase: 'Las risas y los momentos compartidos este mes fueron únicos.',
+    phrase: 'Una de mis fotos y días favorítos, cada vez me sentía (y siento) más cerca de ti',
   },
   {
     id: 4,
     monthToUnlock: 4, // Diciembre
     title: 'Recuerdo 4',
     image: imagenDiciembre, // Usa la variable importada
-    phrase: 'Celebrando las fiestas y creando nuevas tradiciones.',
+    phrase: 'Recuerdo lo emocionado que me sentí por entrar a un nuevo año contigo :)))',
   },
   {
     id: 5,
     monthToUnlock: 5, // Enero
     title: 'Recuerdo 5',
     image: imagenEnero, // Usa la variable importada
-    phrase: 'Empezando un nuevo año a tu lado, lleno de sueños.',
+    phrase: 'Te extrañé como nunca en esas vacaciones, necesitaba besarte DIARIO 😭',
   },
   {
     id: 6,
     monthToUnlock: 6, // Febrero
     title: 'Recuerdo 6',
     image: imagenFebrero, // Usa la variable importada
-    phrase: 'El mes del amor, ¡y cada día te quiero más!',
+    phrase: 'Nuestro primer SanValentin. Ese día me enamoré 1 poquito más de ti de lo normal, cada vez me demuestras más y más lo bonito que es amar a alguien, y ME ENCANTAS por eso.',
   },
   {
     id: 7,
     monthToUnlock: 7, // Marzo
     title: 'Recuerdo 7',
     image: imagenMarzo, // Cambiado para usar la imagen de Marzo
-    phrase: 'Aventuras de primavera y momentos soleados.',
+    phrase: 'Nuestro primer viaje juntos (de muchos). Ahí me di cuenta lo increíble que es viajar con una persona a la que amo tanto 🐄',
   },
   {
     id: 8,
     monthToUnlock: 8, // Abril
     title: 'Recuerdo 8',
     image: imagenAbril, // Correcto según tu lista
-    phrase: 'Descubriendo nuevos lugares y creciendo juntos.',
+    phrase: 'AAAAA QUE PRECIOSA TE VEIAS EN TU CUMPLE, no sabes la felicidad que me da verte feliz.',
   },
   {
     id: 9,
     monthToUnlock: 9, // Mayo
     title: 'Recuerdo 9',
     image: imagenMayo, // Usa la variable importada
-    phrase: 'Casi un año y cada recuerdo es un tesoro.',
+    phrase: 'ASODIVAOÑI siento que nuestro aniversario esta cerquísima YA, TE AMO CADA DÍA MÁS',
   },
   // Tarjetas bloqueadas inicialmente
   {
