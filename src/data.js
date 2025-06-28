@@ -8,6 +8,7 @@ import imagenFebrero from './assets/images/feb.jpg';
 import imagenMarzo from './assets/images/mar.jpg';
 import imagenAbril from './assets/images/abr.JPG';
 import imagenMayo from './assets/images/may.JPG';
+import imagenJunio from './assets/images/jun.jpeg';
 // ... y así sucesivamente para junio, julio, agosto
 
 export const relationshipStartDate = '2024-08-18'; // AAAA-MM-DD
@@ -82,8 +83,8 @@ export const cardsData = [
     id: 10,
     monthToUnlock: 10, // Junio
     title: 'Recuerdo 10',
-    image: null, // O una imagen placeholder para las bloqueadas si lo deseas, o la imagen real
-    phrase: '¡Un recuerdo especial te espera aquí!',
+    image: imagenJunio, // O una imagen placeholder para las bloqueadas si lo deseas, o la imagen real
+    phrase: 'La rereación de nuestra 1era date :3',
   },
   {
     id: 11,
