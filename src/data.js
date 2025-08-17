@@ -93,14 +93,14 @@ export const cardsData = [
     monthToUnlock: 11, // Julio
     title: 'Recuerdo 11',
     image: imagenJulio,
-    phrase: 'Casi llegamos al año, ¡qué emoción!',
+    phrase: 'NOS CASAMOS AAAAAAAAAAA me puse muy feliz, me encanta jugar sv contigo (ojalá ya se haga realidad)',
   },
   {
     id: 12,
     monthToUnlock: 12, // Agosto
     title: 'Recuerdo 12',
     image: imagenAgosto,
-    phrase: '¡Feliz Aniversario! Un año de amor y felicidad.',
+    phrase: 'NUESTRO ANIVERSARIO MI AMOR, TE AMO, FELICIDADEEEEES',
   },
   // ... puedes añadir más si es necesario, o ajustar los meses
 ];
