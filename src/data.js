@@ -9,7 +9,7 @@ import imagenMarzo from './assets/images/mar.jpg';
 import imagenAbril from './assets/images/abr.JPG';
 import imagenMayo from './assets/images/may.JPG';
 import imagenJunio from './assets/images/jun.jpeg';
-import imagenJulio from './assets/images/jul.jpg';
+import imagenJulio from './assets/images/jul.png';
 import imagenAgosto from './assets/images/ago.jpg';
 // ... y así sucesivamente para junio, julio, agosto
 
