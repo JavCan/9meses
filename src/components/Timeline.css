@@ -194,3 +194,13 @@
     padding: 8px 14px;
   }
 }
+
+.stars-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2em; /* Tamaño de las estrellas */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px; /* Espacio entre estrellas */
+}

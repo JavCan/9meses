@@ -10,6 +10,7 @@ import imagenAbril from './assets/images/abr.JPG';
 import imagenMayo from './assets/images/may.JPG';
 import imagenJunio from './assets/images/jun.jpeg';
 import imagenJulio from './assets/images/jul.png';
+import imagenAgosto from './assets/images/aug.JPG';
 // ... y así sucesivamente para junio, julio, agosto
 
 export const relationshipStartDate = '2024-08-18'; // AAAA-MM-DD
@@ -98,7 +99,7 @@ export const cardsData = [
     id: 12,
     monthToUnlock: 12, // Agosto
     title: 'Recuerdo 12',
-    image: null,
+    image: imagenAgosto,
     phrase: 'NUESTRO ANIVERSARIO MI AMOR, TE AMO, FELICIDADEEEEES',
   },
   // ... puedes añadir más si es necesario, o ajustar los meses

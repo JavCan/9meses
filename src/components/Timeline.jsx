@@ -8,6 +8,7 @@ import { loadSlim } from 'tsparticles-slim';
 import './Timeline.css';
 // Importa el archivo de audio
 import songFile from '../assets/music/loco.mp3'; // Ajusta la ruta según donde guardes el archivo
+import dayjs from 'dayjs'; // Import dayjs
 
 const Timeline = () => {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining(anniversaryDate));
@@ -16,6 +17,7 @@ const Timeline = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [buttonPressed, setButtonPressed] = useState(false); // Nuevo estado para controlar si el botón ya fue presionado
   const audioRef = useRef(null);
+  const [numStars, setNumStars] = useState(0); // Nuevo estado para el número de estrellas
   
   // Función para inicializar tsparticles
   const particlesInit = useCallback(async (engine) => {
@@ -114,11 +116,38 @@ const Timeline = () => {
     activateCelebration();
   };
 
+  // Función para calcular el número de estrellas
+  const calculateStars = useCallback(() => {
+    const now = dayjs();
+    const startStarDate = dayjs(anniversaryDate); // August 18, 2025
+
+    if (now.isBefore(startStarDate, 'day')) {
+      return 0;
+    }
+
+    const diffMonths = now.diff(startStarDate, 'month');
+    if (diffMonths < 0) {
+      return 0;
+    }
+
+    // Si el día actual es anterior al día 18 del mes actual,
+    // y la diferencia de meses es positiva, aún no hemos completado el mes actual para una estrella.
+    if (now.date() < startStarDate.date() && diffMonths > 0) {
+      return diffMonths - 1;
+    }
+
+    return diffMonths;
+  }, [anniversaryDate]); // Dependency on anniversaryDate
+
   useEffect(() => {
+    // Cálculo inicial de estrellas
+    setNumStars(calculateStars());
+
     const timer = setInterval(() => {
       const remaining = getTimeRemaining(anniversaryDate);
       setTimeRemaining(remaining);
       setProgress(getProgressPercentage(relationshipStartDate, anniversaryDate));
+      setNumStars(calculateStars()); // Actualizar estrellas cada segundo
       
       // Si el contador llega a cero, activar la celebración
       if (!remaining && !showConfetti) {
@@ -131,7 +160,7 @@ const Timeline = () => {
       clearInterval(timer);
       // No detener la música aquí si se quiere que se reproduzca indefinidamente
     };
-  }, [showConfetti]);
+  }, [showConfetti, anniversaryDate, relationshipStartDate, calculateStars]);
 
   // Renderizado cuando el contador llega a cero
   if (!timeRemaining) {
@@ -148,6 +177,13 @@ const Timeline = () => {
         <h2 className="timeline-title">¡Feliz Aniversario Amorcito Corazón!</h2>
         <p className="anniversary-message">Ya por fin cumplimos 1 año de futuros esposos :3</p>
         
+        {/* Nuevo div para las estrellitas */}
+        <div className="stars-container">
+          {Array.from({ length: numStars }).map((_, index) => (
+            <span key={index} className="star-icon">⭐</span>
+          ))}
+        </div>
+
         {/* Reproductor de audio oculto */}
         <audio ref={audioRef} src={songFile || null} loop />
         
@@ -193,6 +229,13 @@ const Timeline = () => {
       </div>
       <p className="progress-label">Cada vez falta menos :)</p>
       
+      {/* Nuevo div para las estrellitas */}
+      <div className="stars-container">
+        {Array.from({ length: numStars }).map((_, index) => (
+          <span key={index} className="star-icon">⭐</span>
+        ))}
+      </div>
+
       {/* Botón para probar la celebración */}
       {timeRemaining === null && (
         <motion.button 
